@@ -3,7 +3,7 @@ import Footer from "../src/components/footer";
 import Header from "../src/components/header";
 import "./index.css";
 
-function App() {
+const App = () => {
   return (
     <Fragment>
       <Header />
@@ -13,6 +13,6 @@ function App() {
       <Footer />
     </Fragment>
   );
-}
+};
 
 export default App;
