@@ -1,14 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Footer from "../src/components/footer";
 import Header from "../src/components/header";
+import "./index.css";
 
 function App() {
   return (
-    <div className="App">
+    <Fragment>
       <Header />
-      <h2>app works</h2>
+      <main>
+        <h2>app works</h2>
+      </main>
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 
