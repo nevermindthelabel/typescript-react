@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import Footer from "../src/components/footer";
 import Header from "../src/components/header";
+import QuestionCard from "./components/QuestionCard";
 import "./index.css";
-import { start } from "repl";
 
 const App = () => {
   const startTrivia = async () => {};
@@ -16,7 +16,15 @@ const App = () => {
       <Header />
       <main>
         <h2>React Quiz</h2>
-        <button className="start" onClick={startTrivia}></button>
+        <button className="start" onClick={startTrivia}>
+          Start Game
+        </button>
+        <p className="score"></p>
+        <p>loading .....</p>
+        <QuestionCard />
+        <button className="next" onClick={nextQuestion}>
+          Next Question
+        </button>
       </main>
       <Footer />
     </Fragment>
