@@ -19,9 +19,14 @@ code {
   grid-template-rows: auto 1fr auto;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
+  background-image: url("./images/beach.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0 20px;
+  justify-content: center;
 }
 main {
-  background: orange;
+  grid-column: 1 / -1;
 }
 header {
   grid-column: 1 / -1;
@@ -31,4 +36,5 @@ main {
 }
 footer {
   grid-column: 1 / -1;
+  place-items: center center;
 }
