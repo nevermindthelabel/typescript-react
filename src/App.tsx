@@ -2,6 +2,8 @@ import React, { Fragment, useState } from "react";
 import Footer from "../src/components/footer";
 import Header from "../src/components/header";
 import QuestionCard from "./components/QuestionCard";
+import { fetchQuizQuestions } from "./API";
+import { Difficulty } from "./API";
 import "./index.css";
 
 const TOTAL_QUESTIONS = 10;
@@ -18,6 +20,8 @@ const App = () => {
 
   const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {};
 
+  console.log(fetchQuizQuestions(TOTAL_QUESTIONS, Difficulty.EASY));
+
   const nextQuestion = () => {};
 
   return (
@@ -30,14 +34,14 @@ const App = () => {
         </button>
         <p className="score">score:</p>
         <p>Loading Questions.....</p>
-        <QuestionCard
+        {/* <QuestionCard
           questionNumber={number + 1}
           totalQuestions={TOTAL_QUESTIONS}
           question={questions[number]}
           answers={questions[number]}
           userAnswer={userAnswers ? userAnswers[number] : undefined}
           callback={checkAnswer}
-        />
+        /> */}
         <button className="next" onClick={nextQuestion}>
           Next Question
         </button>
