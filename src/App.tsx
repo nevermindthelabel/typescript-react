@@ -28,8 +28,8 @@ const App = () => {
         <button className="start" onClick={startTrivia}>
           Start Game
         </button>
-        <p className="score"></p>
-        <p>loading .....</p>
+        <p className="score">score:</p>
+        <p>Loading Questions.....</p>
         <QuestionCard
           questionNumber={number + 1}
           totalQuestions={TOTAL_QUESTIONS}
