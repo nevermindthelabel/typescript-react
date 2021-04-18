@@ -74,7 +74,7 @@ const App = () => {
         ) : (
           ""
         )}
-        {!gameOver ? <p className="score">score:</p> : ""}
+        {!gameOver ? <p className="score">score: {score}</p> : ""}
         {loading ? <p>Loading Questions.....</p> : ""}
         {!loading && !gameOver ? (
           <QuestionCard
